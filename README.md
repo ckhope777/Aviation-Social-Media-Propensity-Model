@@ -15,27 +15,28 @@ The challenge: Customer purchasing patterns differ by device type (Laptop vs. Mo
  - **Target variable:** Propensity to buy flight tickets (binary classification).
  - Data preprocessing was essential due to outliers, missing values, and noise in raw data
 
-## Approach & Methodology $$
-1. Data Preprocessing
+## Approach & Methodology ##
+
+**1. Data Preprocessing**
  - Checked for missing values and imputed appropriately.
  - Identified and handled outliers using the IQR method
  - Scaled numerical features for model compatibility.
  - Encoded categorical variables (e.g., device type, demographics).
  - Split dataset into Laptop subset and Mobile subset for separate modeling.
 
-2. Exploratory Data Analysis (EDA)
+**2. Exploratory Data Analysis (EDA)**
  - Analyzed customer activity trends by device type.
  - Correlation checks between social behavior and purchase likelihood.
  - Visualized distribution of propensity scores for laptop vs. mobile users.
 
-3. Model Development
+**3. Model Development**
  - Applied classification algorithms such as Logistic Regression, Random Forest, and Gradient Boosting.
  - Built two models:
     - Laptop Model – optimized for behaviors of desktop/laptop users.
     - Mobile Model – optimized for all non-laptop users (smartphones/tablets).
  - Evaluated performance using Accuracy, Precision, Recall, and AUC.
 
-4. Results & Findings
+**4. Results & Findings**
  - Models successfully differentiated customers with high vs. low purchase propensity.
  - Laptop model showed stronger prediction accuracy due to richer user activity data.
  - Mobile model captured a larger volume of users, though engagement patterns were noisier.
